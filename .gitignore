@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor
+.vscode/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Generated attack outputs / datasets
+adversarial_samples/
+correct_1000_*/
