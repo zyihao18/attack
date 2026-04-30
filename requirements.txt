@@ -1,0 +1,8 @@
+# Install the torch/torchvision build that matches your CUDA or CPU environment.
+torch>=2.0
+torchvision>=0.15
+numpy>=1.23
+Pillow>=9.0
+scikit-image>=0.20
+tqdm>=4.64
+torchcam>=0.4.0
