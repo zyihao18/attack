@@ -16,3 +16,7 @@ env/
 # Generated attack outputs / datasets
 adversarial_samples/
 correct_1000_*/
+metadata/
+ImageNet_CAM_swin/
+ILSVRC2012_img_val/
+imagenet/
