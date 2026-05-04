@@ -53,36 +53,6 @@ E:\毕设
     └── imagenet_label_english.json
 ```
 
-Windows PowerShell 解压示例：
-
-```powershell
-mkdir E:\毕设\imagenet
-mkdir E:\毕设\imagenet\ILSVRC2012_img_val
-tar -xf ILSVRC2012_img_val.tar -C E:\毕设\imagenet\ILSVRC2012_img_val
-tar -xzf ILSVRC2012_devkit_t12.tar.gz -C E:\毕设\imagenet
-```
-
-`image_process.py` 默认会读取：
-
-- `E:\毕设\imagenet\ILSVRC2012_img_val`
-- `E:\毕设\imagenet\imagenet_img_info.txt`
-- `E:\毕设\imagenet\imagenet_label_english.json`
-
-其中 `imagenet_img_info.txt` 每行格式为：
-
-```text
-ILSVRC2012_val_00000001.JPEG	65
-```
-
-也就是“图片文件名 + Tab + torchvision 使用的 0 到 999 类别编号”。`imagenet_label_english.json` 用于记录类别英文名，键是 0 到 999 的类别编号，值中第二项是类别名，例如：
-
-```json
-{
-  "0": ["n01440764", "tench"],
-  "1": ["n01443537", "goldfish"]
-}
-```
-
 准备好原始验证集和标签文件后，运行下面的命令生成本项目实际攻击使用的筛选数据集：
 
 ```powershell
